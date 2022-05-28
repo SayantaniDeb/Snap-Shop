@@ -39,7 +39,7 @@ class MultiApp:
         })
 
     def run(self):
-        st.sidebar.image("Snap-Shop/images/Snap&Shop.png", use_column_width=True)
+        st.sidebar.image("./images/Snap&Shop.png", use_column_width=True)
         app = st.sidebar.selectbox(
         #app = st.selectbox(
             
