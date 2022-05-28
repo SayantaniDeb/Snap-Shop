@@ -40,8 +40,8 @@ st.markdown("""
                .css-18e3th9 {
                     padding-top: 0rem;
                     padding-bottom: 0rem;
-                    padding-left: 5rem;
-                    padding-right: 5rem;
+                    padding-left: 4rem;
+                    padding-right: 4rem;
                 }
                .css-1d391kg {
                     padding-top: 8rem;
