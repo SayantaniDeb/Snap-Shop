@@ -38,7 +38,7 @@ def app():
                         f.write(uploaded_file.getbuffer())
                         return 1
                 except:
-                    st.header("File not saved")
+                    st.header("2 . File not saved")
                     return 0
 
 
@@ -68,13 +68,15 @@ def app():
             if uploaded_file is not None:
                 if save_file(uploaded_file):
                     # display image
+                    st.header("save_file : true")
                     show_images = Image.open(uploaded_file)
                     size = (400, 400)
                     resized_im = show_images.resize(size)
                     st.image(resized_im)
                     # extract features of uploaded image
                     features = extract_img_features(os.path.join("uploader", uploaded_file.name), model)
-                    #st.text(features)
+                    st.text(features)
+                    st.header("save_file : true x2")
                 
                     img_indicess = recommendd(features, features_list)
                     col1,col2,col3,col4,col5 = st.columns(5)
