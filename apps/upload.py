@@ -33,10 +33,12 @@ def app():
             model = Sequential([model, GlobalMaxPooling2D()])
             def save_file(uploaded_file):
                 try:
-                    with open(os.path.join("Snap-Shop/uploader", uploaded_file.name), 'wb') as f:
+                    with open(os.path.join("uploader", uploaded_file.name), 'wb') as f:
+                        st.header(f)
                         f.write(uploaded_file.getbuffer())
                         return 1
                 except:
+                    st.header("File not saved")
                     return 0
 
 
