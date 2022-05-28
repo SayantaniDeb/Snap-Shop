@@ -62,6 +62,7 @@ def app():
                 return indices
 
             uploaded_file = st.file_uploader("Choose your image")
+        with st.spinner('Loading...'):
             if uploaded_file is not None:
                 if save_file(uploaded_file):
                     # display image
@@ -72,9 +73,10 @@ def app():
                     # extract features of uploaded image
                     features = extract_img_features(os.path.join("uploader", uploaded_file.name), model)
                     #st.text(features)
+                
                     img_indicess = recommendd(features, features_list)
                     col1,col2,col3,col4,col5 = st.columns(5)
-
+                
                     with col1:
                         st.header("I")
                         st.image(img_files_list[img_indicess[0][0]])
