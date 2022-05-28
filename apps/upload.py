@@ -56,8 +56,6 @@ def app():
 
 
             def recommendd(features, features_list):
-                st.text("features-list")
-                st.text(features_list)
                 neighbors = NearestNeighbors(n_neighbors=6, algorithm='brute', metric='euclidean')
                 neighbors.fit(features_list)
 
@@ -76,35 +74,30 @@ def app():
                     st.image(resized_im)
                     # extract features of uploaded image
                     features = extract_img_features(os.path.join("uploader", uploaded_file.name), model)
-                    st.text("features")
-                    st.text(features)
                 
                     img_indicess = recommendd(features, features_list)
                     st.text("Image indexs")
                     st.text(img_indicess)
                     col1,col2,col3,col4,col5 = st.columns(5)
-
-                    st.text("img_files_list")
-                    st.text(img_files_list)
                 
                     with col1:
                         st.header("I")
-                        st.image(img_files_list[img_indicess[0][0]])
+                        st.image(os.path.join("fashion_small/images", img_indicess[0][0]))
 
                     with col2:
                         st.header("II")
-                        st.image(img_files_list[img_indicess[0][1]])
+                        st.image(os.path.join("fashion_small/images", img_indicess[0][1]))
 
                     with col3:
                         st.header("III")
-                        st.image(img_files_list[img_indicess[0][2]])
+                        st.image(os.path.join("fashion_small/images", img_indicess[0][2]))
 
                     with col4:
                         st.header("IV")
-                        st.image(img_files_list[img_indicess[0][3]])
+                        st.image(os.path.join("fashion_small/images", img_indicess[0][3]))
 
                     with col5:
                         st.header("V")
-                        st.image(img_files_list[img_indicess[0][4]])
+                        st.image(os.path.join("fashion_small/images", img_indicess[0][4]))
                 else:
                     st.header("Some error occur")
