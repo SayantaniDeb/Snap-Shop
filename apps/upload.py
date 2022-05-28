@@ -62,7 +62,7 @@ def app():
                 return indices
 
             uploaded_file = st.file_uploader("Choose your image")
-        with st.spinner('Loading...'):
+            
             if uploaded_file is not None:
                 if save_file(uploaded_file):
                     # display image
