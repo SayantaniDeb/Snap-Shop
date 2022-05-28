@@ -77,25 +77,30 @@ def app():
                     st.text("Image indexs")
                     st.text(img_indicess)
                     col1,col2,col3,col4,col5 = st.columns(5)
-                    st.text(img_files_list[img_indicess[0][0]])
+                
                     with col1:
                         st.header("I")
-                        st.image(img_files_list[img_indicess[0][0]])
+                        img_tag=img_files_list[img_indicess[0][0]].split("\\")[1]
+                        st.image(os.path.join("fashion_small/images", img_tag))
 
                     with col2:
                         st.header("II")
-                        st.image(img_files_list[img_indicess[0][1]])
+                        img_tag=img_files_list[img_indicess[0][1]].split("\\")[1]
+                        st.image(os.path.join("fashion_small/images/", img_tag))
 
                     with col3:
                         st.header("III")
-                        st.image(img_files_list[img_indicess[0][2]])
+                        img_tag=img_files_list[img_indicess[0][2]].split("\\")[1]
+                        st.image(os.path.join("fashion_small/images", img_tag))
 
                     with col4:
                         st.header("IV")
-                        st.image(img_files_list[img_indicess[0][3]])
+                        img_tag=img_files_list[img_indicess[0][3]].split("\\")[1]
+                        st.image(os.path.join("fashion_small/images", img_tag))
 
                     with col5:
                         st.header("V")
-                        st.image(img_files_list[img_indicess[0][4]])
+                        img_tag=img_files_list[img_indicess[0][4]].split("\\")[1]
+                        st.image(os.path.join("fashion_small/images", img_tag))
                 else:
                     st.header("Some error occur")
