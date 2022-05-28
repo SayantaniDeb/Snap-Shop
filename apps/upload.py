@@ -83,6 +83,9 @@ def app():
                     st.text("Image indexs")
                     st.text(img_indicess)
                     col1,col2,col3,col4,col5 = st.columns(5)
+
+                    st.text("img_files_list")
+                    st.text(img_files_list)
                 
                     with col1:
                         st.header("I")
