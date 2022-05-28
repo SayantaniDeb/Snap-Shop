@@ -82,22 +82,22 @@ def app():
                 
                     with col1:
                         st.header("I")
-                        st.image(os.path.join("fashion_small/images", img_indicess[0][0]))
+                        st.image(os.path.join("fashion_small/images", str(img_indicess[0][0])+".jpg"))
 
                     with col2:
                         st.header("II")
-                        st.image(os.path.join("fashion_small/images", img_indicess[0][1]))
+                        st.image(os.path.join("fashion_small/images/", str(img_indicess[0][1]))+".jpg")
 
                     with col3:
                         st.header("III")
-                        st.image(os.path.join("fashion_small/images", img_indicess[0][2]))
+                        st.image(os.path.join("fashion_small/images", str(img_indicess[0][2]))+".jpg")
 
                     with col4:
                         st.header("IV")
-                        st.image(os.path.join("fashion_small/images", img_indicess[0][3]))
+                        st.image(os.path.join("fashion_small/images", str(img_indicess[0][3])+".jpg"))
 
                     with col5:
                         st.header("V")
-                        st.image(os.path.join("fashion_small/images", img_indicess[0][4]))
+                        st.image(os.path.join("fashion_small/images", str(img_indicess[0][4])+".jpg"))
                 else:
                     st.header("Some error occur")
