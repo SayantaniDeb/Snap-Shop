@@ -25,7 +25,7 @@ with st.container():
       lottie_shop=load_lottieurl("https://assets7.lottiefiles.com/packages/lf20_o02kdakv.json")
       st_lottie(lottie_shop,key="shop",width=350)
     with title:
-      image = Image.open('Snap-Shop/images/4.png')
+      image = Image.open('./images/4.png')
       st.image(image,width=230)
 
 # Add all your application here
