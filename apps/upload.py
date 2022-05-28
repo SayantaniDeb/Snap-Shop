@@ -77,7 +77,7 @@ def app():
                     st.text("Image indexs")
                     st.text(img_indicess)
                     col1,col2,col3,col4,col5 = st.columns(5)
-                
+                    st.text(img_files_list[img_indicess[0][0]])
                     with col1:
                         st.header("I")
                         st.image(img_files_list[img_indicess[0][0]])
