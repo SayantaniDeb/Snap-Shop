@@ -34,11 +34,10 @@ def app():
             def save_file(uploaded_file):
                 try:
                     with open(os.path.join("uploader", uploaded_file.name), 'wb') as f:
-                        st.header(f)
                         f.write(uploaded_file.getbuffer())
                         return 1
                 except:
-                    st.header("2 . File not saved")
+                    st.header("File not saved")
                     return 0
 
 
@@ -64,7 +63,6 @@ def app():
                 return indices
 
             uploaded_file = st.file_uploader("Choose your image")
-            st.header(uploaded_file)
             if uploaded_file is not None:
                 if save_file(uploaded_file):
                     # display image
@@ -82,22 +80,22 @@ def app():
                 
                     with col1:
                         st.header("I")
-                        st.image(os.path.join("fashion_small/images", str(img_indicess[0][0])+".jpg"))
+                        st.image(img_files_list[img_indicess[0][0]])
 
                     with col2:
                         st.header("II")
-                        st.image(os.path.join("fashion_small/images/", str(img_indicess[0][1]))+".jpg")
+                        st.image(img_files_list[img_indicess[0][1]])
 
                     with col3:
                         st.header("III")
-                        st.image(os.path.join("fashion_small/images", str(img_indicess[0][2]))+".jpg")
+                        st.image(img_files_list[img_indicess[0][2]])
 
                     with col4:
                         st.header("IV")
-                        st.image(os.path.join("fashion_small/images", str(img_indicess[0][3])+".jpg"))
+                        st.image(img_files_list[img_indicess[0][3]])
 
                     with col5:
                         st.header("V")
-                        st.image(os.path.join("fashion_small/images", str(img_indicess[0][4])+".jpg"))
+                        st.image(img_files_list[img_indicess[0][4]])
                 else:
                     st.header("Some error occur")

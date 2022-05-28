@@ -28,8 +28,8 @@ def extract_features(img_path,model):
 #print(os.listdir('fashion_small/images'))
 img_files = []
 
-for fashion_images in os.listdir('Snap-Shop/fashion_small/images'):
-    images_path = os.path.join('Snap-Shop/fashion_small/images', fashion_images)
+for fashion_images in os.listdir('fashion_small/images'):
+    images_path = os.path.join('fashion_small/images', fashion_images)
     img_files.append(images_path)
 
 # extracting image features
@@ -39,5 +39,5 @@ for files in tqdm(img_files):
     features_list = extract_features(files, model)
     image_features.append(features_list)
 
-pickle.dump(image_features, open("Snap-Shop/image_features_embedding.pkl", "wb"))
-pickle.dump(img_files, open("Snap-Shop/img_files.pkl", "wb"))
+pickle.dump(image_features, open("image_features_embedding.pkl", "wb"))
+pickle.dump(img_files, open("img_files.pkl", "wb"))
