@@ -74,8 +74,6 @@ def app():
                     features = extract_img_features(os.path.join("uploader", uploaded_file.name), model)
                 
                     img_indicess = recommendd(features, features_list)
-                    st.text("Image indexs")
-                    st.text(img_indicess)
                     col1,col2,col3,col4,col5 = st.columns(5)
                 
                     with col1:
