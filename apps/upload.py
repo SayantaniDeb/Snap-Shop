@@ -25,8 +25,8 @@ def app():
             st.write("3.View a list of similar or matching items available")
             st.write("----")
             st.title('Upload')
-            features_list = pickle.load(open("image_features_embedding.pkl", "rb"))
-            img_files_list = pickle.load(open("img_files.pkl", "rb"))
+            features_list = pickle.load(open("Snap-Shop/image_features_embedding.pkl", "rb"))
+            img_files_list = pickle.load(open("Snap-Shop/img_files.pkl", "rb"))
 
             model = ResNet50(weights="imagenet", include_top=False, input_shape=(224, 224, 3))
             model.trainable = False
