@@ -58,7 +58,7 @@ Enhance shopping experience with Visual Search.<br>
 ## How to get started
 
 ~~~bash
-git clone https://github.com/SayantaniDeb/Snap-Shop
+git clone https://github.com/SayantaniDeb01/Snapshop
 ~~~
 
 ## Installation
