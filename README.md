@@ -1,7 +1,11 @@
 # 🛒Snap&Shop  <img src=https://user-images.githubusercontent.com/74983536/170835268-67b071bb-816b-4581-80e6-f8f8371c860c.png width=350 align='right'>
 
 Enhance shopping experience with Visual Search.<br>
-You can find the app hosted [here](https://share.streamlit.io/sayantanideb01/snapshop/main.py)! 
+
+### You can find the app:
+
+##### [Hosted here](https://share.streamlit.io/sayantanideb01/snapshop/main.py)
+##### [Video Demo](https://youtu.be/jryOa4UpZ1E)
 
 ## 💡Motivation 
 
