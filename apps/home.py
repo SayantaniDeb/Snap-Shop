@@ -11,9 +11,9 @@ def app():
         st.write("Snap&Shop is a visual search engine that helps you find the best clothes for your daily look. It is a free and open-source project, and you can use it for free. You can find more information about Snap&Shop in the [README](https://github.com/SayantaniDeb/Snap-Shop/blob/master/README.md).")
     
     #video
-    video_file = open('./images/demo.mp4', 'rb')
-    video_bytes = video_file.read()
-    st.video(video_bytes)
+    # video_file = open('./images/demo.mp4', 'rb')
+    # video_bytes = video_file.read()
+    # st.video(video_bytes)
     def load_lottieurl(url: str):
       r=requests.get(url)
       if r.status_code != 200:
