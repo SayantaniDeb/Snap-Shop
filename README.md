@@ -79,7 +79,7 @@ streamlit run main.py
 - Therefore it was not possible for the app to be deployed.
 
 
-## 🥇Accomplishments we are proud of
+## 🥇Accomplishments I am proud of
 - This was my first time working on a ML project ✨I DID IT✨
 - Got to learn a lot and a overall nice experience!
 - Made a new github account inorder to host the app in the streamlit server. [Link to the repo which is hosted in streamlit server](https://github.com/SayantaniDeb01/Snapshop)
