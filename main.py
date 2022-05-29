@@ -27,6 +27,7 @@ with st.container():
     with title:
       image = Image.open('./images/4.png')
       st.image(image,width=230)
+    
 
 # Add all your application here
 app.add_app("Home", home.app)
