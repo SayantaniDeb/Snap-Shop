@@ -8,7 +8,7 @@ def app():
     
     st.title('What is Snap&Shop?')
     with st.spinner('Loading...') :
-        st.write("Snap&Shop is a visual search engine that helps you find the best clothes for your daily look. It is a free and open-source project, and you can use it for free. You can find more information about Snap&Shop in the [README]().")
+        st.write("Snap&Shop is a visual search engine that helps you find the best clothes for your daily look. It is a free and open-source project, and you can use it for free. You can find more information about Snap&Shop in the [README](https://github.com/SayantaniDeb/Snap-Shop/blob/master/README.md).")
     
     #video
     video_file = open('./images/demo.mp4', 'rb')
@@ -19,6 +19,8 @@ def app():
       if r.status_code != 200:
           return None
       return r.json()
+
+    st.title('How it works?')
 #--load assets---
 
     
@@ -37,7 +39,8 @@ def app():
         with right_column:
             image = Image.open('./images/3.png')
             st.image(image,width=230)
-    st.write("---")      
+    st.write("---")    
+    st.title('Advantages')  
     with st.container():
         col1,col2=st.columns((3,1))
         with col1:
